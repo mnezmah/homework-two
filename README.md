@@ -93,5 +93,5 @@ The app should be runnable simply by cloning the repository, installing dependen
    
 1. The function `promiseMeAString`
 - This function should return a Promise
-- If promiseMeAString is called with a string like: `promiseMeAString('I Promise!')`, te Promise should resolve with "You kept the Promise!"
+- If promiseMeAString is called with a string like: `promiseMeAString('I Promise!')`, then Promise should resolve with "You kept the Promise!"
 - If promiseMeAString is called with null like: `promiseMeAString(null)`, te Promise should reject with "You have failed me!"
