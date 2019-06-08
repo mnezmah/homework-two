@@ -1,6 +1,5 @@
 const superagent = require("superagent")
 
-
 function getTatooineResidents() {
   return superagent
     .get('https://swapi.co/api/planets/1/')
@@ -14,7 +13,6 @@ function promiseMeAString(string) {
     reject("You have failed me!")
   })
 }
-
 
 module.exports = {
   getTatooineResidents,

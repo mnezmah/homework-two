@@ -1,38 +1,27 @@
- class ShoppingCart {
-  constructor(){
+class ShoppingCart {
+  constructor() {
     this.items = []
-    
-  }
-  addItem(name, quantity, pricePerUnit){
-    // this.items.push(new Item(name, quantity, pricePerUnit))
-    this.items.push({name, quantity, pricePerUnit})
 
   }
+  addItem(name, quantity, pricePerUnit) {
+    this.items.push({ name, quantity, pricePerUnit })
+  }
 
-  getItems(){
+  getItems() {
     return this.items
   }
 
-  clear(){
+  clear() {
     return this.items = []
   }
 
-  total(){
+  total() {
     const prices = this.items.map(item => {
-      return item.pricePerUnit * item.quantity  }
-    )    
- 
-    return prices.reduce((acc, curr) => { return acc + curr}, 0)
-  } 
+      return item.pricePerUnit * item.quantity
+    }
+    )
+    return prices.reduce((acc, curr) => { return acc + curr }, 0)
+  }
 }
-
-
-// class Item {
-//   constructor(name, quantity, price){
-//     this.name = name
-//     this.quantity = quantity
-//     this.pricePerUnit = price
-//   }
-// }
 
 module.exports = ShoppingCart
